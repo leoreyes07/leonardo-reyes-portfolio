@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "title": "Hi, I'm {{name}}",
+    "subtitle": "Creative Developer.",
+    "available": "Available for new opportunities",
+    "description": "Architecting scalable solutions with a focus on elegant code and immersive user experiences. I bridge the gap between design and high-precision engineering.",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV"
+  },
+  "projects": {
+    "title": "Featured Work",
+    "description": "A selection of recent projects highlighting my expertise in full-stack development and system architecture.",
+    "viewArchive": "View Archive"
+  },
+  "projectsData": {
+    "p1": {
+      "title": "FinTech Analytics Platform",
+      "description": "A high-performance dashboard for real-time financial data processing, built with WebSockets and complex data visualization libraries."
+    },
+    "p2": {
+      "title": "E-Commerce API",
+      "description": "Scalable microservices architecture for a high-traffic retail platform."
+    },
+    "p3": {
+      "title": "Workflow Automator",
+      "description": "Streamlining team operations with custom CI/CD pipelines.",
+      "tag": "Internal Tool"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": {
+      "j1": {
+        "company": "TechFlow Systems",
+        "role": "Senior Full-Stack Developer",
+        "period": "2022 - Present",
+        "desc": "Leading the development of scalable cloud-native applications and mentoring junior engineers in modern best practices."
+      },
+      "j2": {
+        "company": "Visionary Lab",
+        "role": "Software Engineer",
+        "period": "2020 - 2022",
+        "desc": "Developed immersive WebGL experiences and high-performance React dashboards for data-heavy industries."
+      },
+      "j3": {
+        "company": "BlueOcean Startups",
+        "role": "Junior Developer",
+        "period": "2018 - 2020",
+        "desc": "Contributed to building early-stage e-commerce platforms and automated testing pipelines."
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Mastery",
+    "description": "I specialize in building complex digital systems using a diverse stack of modern technologies. My focus is on writing clean, maintainable, and highly performant code.",
+    "items": {
+      "typescript": "TypeScript",
+      "ai": "AI Integration",
+      "architecture": "Architecture",
+      "optimizations": "Optimizations"
+    }
+  },
+  "skillsData": {
+    "frontend": "Frontend Development",
+    "backend": "Backend & APIs",
+    "cloud": "Cloud Infrastructure"
+  },
+  "contact": {
+    "title": "Let's build something",
+    "titleHighlight": "remarkable",
+    "titleEnd": "together.",
+    "subtitle": "Currently accepting new projects and collaborations.",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "copyright": "© 2024 Digital Architect. Crafted with Precision."
+  }
+}

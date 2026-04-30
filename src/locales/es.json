@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "getInTouch": "Contactar"
+  },
+  "hero": {
+    "title": "Hola, soy {{name}}",
+    "subtitle": "Desarrollador creativo.",
+    "available": "Disponible para nuevas oportunidades",
+    "description": "Construyendo soluciones escalables con enfoque en código elegante y experiencias inmersivas. Cierro la brecha entre el diseño y la ingeniería de alta precisión.",
+    "viewProjects": "Ver Proyectos",
+    "downloadCv": "Descargar CV"
+  },
+  "projects": {
+    "title": "Trabajos Destacados",
+    "description": "Una selección de proyectos recientes que destacan mi experiencia en desarrollo full-stack y arquitectura de sistemas.",
+    "viewArchive": "Ver Archivo"
+  },
+  "projectsData": {
+    "p1": {
+      "title": "Plataforma de Análisis FinTech",
+      "description": "Un panel de alto rendimiento para el procesamiento de datos financieros en tiempo real, construido con WebSockets y librerías de visualización de datos complejas."
+    },
+    "p2": {
+      "title": "API de E-Commerce",
+      "description": "Arquitectura de microservicios escalable para una plataforma minorista de alto tráfico."
+    },
+    "p3": {
+      "title": "Automatizador de Flujos de Trabajo",
+      "description": "Optimizando operaciones de equipo con pipelines CI/CD personalizados.",
+      "tag": "Herramienta Interna"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "jobs": {
+      "j1": {
+        "company": "TechFlow Systems",
+        "role": "Desarrollador Full-Stack Senior",
+        "period": "2022 - Presente",
+        "desc": "Liderando el desarrollo de aplicaciones escalables en la nube y mentoreando a ingenieros junior en mejores prácticas modernas."
+      },
+      "j2": {
+        "company": "Visionary Lab",
+        "role": "Ingeniero de Software",
+        "period": "2020 - 2022",
+        "desc": "Desarrollé experiencias inmersivas en WebGL y paneles de control en React de alto rendimiento para industrias de uso intensivo de datos."
+      },
+      "j3": {
+        "company": "BlueOcean Startups",
+        "role": "Desarrollador Junior",
+        "period": "2018 - 2020",
+        "desc": "Contribuí a la construcción de plataformas de comercio electrónico en etapa inicial y pipelines de pruebas automatizadas."
+      }
+    }
+  },
+  "skills": {
+    "title": "Dominio Técnico",
+    "description": "Me especializo en construir sistemas digitales complejos usando un stack diverso de tecnologías modernas. Mi enfoque es escribir código limpio, mantenible y de alto rendimiento.",
+    "items": {
+      "typescript": "TypeScript",
+      "ai": "Integración de IA",
+      "architecture": "Arquitectura",
+      "optimizations": "Optimizaciones"
+    }
+  },
+  "skillsData": {
+    "frontend": "Desarrollo Frontend",
+    "backend": "Backend y APIs",
+    "cloud": "Infraestructura Cloud"
+  },
+  "contact": {
+    "title": "Construyamos algo",
+    "titleHighlight": "extraordinario",
+    "titleEnd": "juntos.",
+    "subtitle": "Actualmente aceptando nuevos proyectos y colaboraciones.",
+    "button": "Contactar"
+  },
+  "footer": {
+    "copyright": "© 2024 Digital Architect. Creado con Precisión."
+  }
+}

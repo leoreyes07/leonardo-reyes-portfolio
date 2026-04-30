@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+
+  --color-surface: #09112d;
+  --color-surface-container: #161e3a;
+  --color-surface-container-low: #121a36;
+  --color-surface-container-high: #212845;
+  --color-surface-container-highest: #2c3351;
+  --color-on-surface: #dce1ff;
+  --color-on-surface-variant: #c7c4d7;
+  
+  --color-primary: #c0c1ff;
+  --color-primary-container: #8083ff;
+  --color-on-primary: #1000a9;
+  
+  --color-secondary: #48dada;
+  --color-secondary-container: #05bbbc;
+  --color-on-secondary: #003737;
+
+  --color-tertiary: #ffafd3;
+  --color-tertiary-container: #b55787;
+  
+  --color-outline: #908fa0;
+  --color-outline-variant: #464554;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-surface/40 backdrop-blur-xl border-t border-white/10;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+}
+
+body {
+  @apply bg-surface text-on-surface font-sans antialiased selection:bg-secondary/30 selection:text-secondary;
+}
+
+h1, h2, h3, h4 {
+  @apply font-headline;
+}
