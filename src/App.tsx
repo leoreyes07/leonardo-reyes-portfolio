@@ -177,7 +177,7 @@ export default function App() {
             >
               <img 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYW4w9joWvhJvGZq0E1iyI1xXZafhVquUCmcCp7g2lVD79xdNr-zG0UXcUFxPSlBAps-M6fFzqxjq2pjZKJ3LZMhmYeK--qaH7-FHU-O5IfHbBqv7U8wW6lUX4GaYXcRtWKsz7g3IAj_mOMDYP41aefBoj8LOTHq0mBOMHdlpWqngLm467STZrq3zU1i5qUD4prDzw7rx_s-O_izIb4ZFdN2nDdS7gvjNM4hFegxK8fND_aFpnD5UCSULnWEPxyArM27OF2gM3hpU" 
-                alt="Juan Pérez Profile" 
+                alt="Leonardo Reyes Profile" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -199,7 +199,7 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-on-surface mb-6 leading-tight"
             >
-              {t('hero.title', { name: 'Juan Pérez' })}<br />
+              {t('hero.title', { name: 'Leonardo Reyes' })}<br />
               {t('hero.subtitle')}
             </motion.h1>
 
