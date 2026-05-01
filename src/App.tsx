@@ -6,25 +6,26 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
 import i18n from "./i18n";
-import { 
-  Github, 
-  Linkedin, 
-  Twitter, 
-  Mail, 
-  Download, 
-  ArrowDown, 
-  ArrowRight, 
-  ExternalLink, 
-  ShoppingCart, 
-  Cpu, 
-  Layers, 
-  Menu, 
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Download,
+  ArrowDown,
+  ArrowRight,
+  ExternalLink,
+  ShoppingCart,
+  Cpu,
+  Layers,
+  Menu,
   X,
   CodeXml,
   BrainCircuit,
   Settings2
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import CustomCursor from "./components/CustomCursor";
 
 const PROJECTS = [
   {
@@ -68,6 +69,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface flex flex-col selection:bg-secondary/30 selection:text-secondary">
+      <CustomCursor />
       {/* Navigation */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-surface/80 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"}`}
@@ -82,14 +84,14 @@ export default function App() {
           </motion.div>
           {['projects', 'skills', 'experience', 'contact'].map((key) => (
             <a key={key} href={`#${key}`}
-              className="text-on-surface-variant hover:text-secondary transition-colors font-medium text-sm"
+              className="group relative hidden md:inline-flex items-center justify-center px-5 py-2 rounded-full text-on-surface-variant font-medium text-sm transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
             >
-              {t(`nav.${key}`)}
+              <span className="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span className="relative z-10 group-hover:text-on-primary transition-colors duration-500">
+                {t(`nav.${key}`)}
+              </span>
             </a>
           ))}
-          <button className="px-6 py-2 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-sm hover:shadow-lg hover:shadow-primary/20 transition-all">
-            {t('nav.getInTouch')}
-          </button>
           <button
             className="md:hidden text-on-surface p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,16 +99,16 @@ export default function App() {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <div className="lang-selector flex items-center gap-1 bg-surface-container-high p-1 rounded-full border border-white/5 ml-4">
-            <button 
-              onClick={() => i18n.changeLanguage('en')} 
-              aria-label="English" 
+            <button
+              onClick={() => i18n.changeLanguage('en')}
+              aria-label="English"
               className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${i18n.language === 'en' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
             >
               EN
             </button>
-            <button 
-              onClick={() => i18n.changeLanguage('es')} 
-              aria-label="Español" 
+            <button
+              onClick={() => i18n.changeLanguage('es')}
+              aria-label="Español"
               className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${i18n.language === 'es' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
             >
               ES
@@ -127,20 +129,20 @@ export default function App() {
                   <a
                     key={item}
                     href={`#${item}`}
-                    className="text-on-surface font-medium"
+                    className="group relative w-full py-3 px-4 rounded-xl text-center text-on-surface font-medium transition-all duration-500 overflow-hidden"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {t(`nav.${item}`)}
+                    <span className="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                    <span className="relative z-10 group-hover:text-on-primary transition-colors duration-500">
+                      {t(`nav.${item}`)}
+                    </span>
                   </a>
                 ))}
-                <button className="w-full py-3 rounded-xl bg-primary text-on-primary font-bold">
-                  {t('nav.getInTouch')}
-                </button>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
-      </nav> 
+      </nav>
 
 
       <main className="flex-grow">
@@ -148,42 +150,42 @@ export default function App() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-20">
           {/* Animated Background Orbs */}
           <div className="absolute inset-0 pointer-events-none opacity-20">
-            <motion.div 
-              animate={{ 
+            <motion.div
+              animate={{
                 scale: [1, 1.2, 1],
                 x: [0, 50, 0],
                 y: [0, -30, 0],
               }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[120px]" 
+              className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[120px]"
             />
-            <motion.div 
-              animate={{ 
+            <motion.div
+              animate={{
                 scale: [1, 1.3, 1],
                 x: [0, -40, 0],
                 y: [0, 60, 0],
               }}
               transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[150px]" 
+              className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[150px]"
             />
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
             {/* Profile Image */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-surface-container-highest shadow-2xl mx-auto mb-8"
             >
-              <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYW4w9joWvhJvGZq0E1iyI1xXZafhVquUCmcCp7g2lVD79xdNr-zG0UXcUFxPSlBAps-M6fFzqxjq2pjZKJ3LZMhmYeK--qaH7-FHU-O5IfHbBqv7U8wW6lUX4GaYXcRtWKsz7g3IAj_mOMDYP41aefBoj8LOTHq0mBOMHdlpWqngLm467STZrq3zU1i5qUD4prDzw7rx_s-O_izIb4ZFdN2nDdS7gvjNM4hFegxK8fND_aFpnD5UCSULnWEPxyArM27OF2gM3hpU" 
-                alt="Leonardo Reyes Profile" 
-                className="w-full h-full object-cover"
+              <img
+                src="/profile.png"
+                alt="Leonardo Reyes Profile"
+                className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -193,7 +195,7 @@ export default function App() {
               <span className="text-sm font-medium text-on-surface-variant">{t('hero.available')}</span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -203,7 +205,7 @@ export default function App() {
               {t('hero.subtitle')}
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -212,7 +214,7 @@ export default function App() {
               {t('hero.description')}
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -235,7 +237,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <motion.h2 
+                <motion.h2
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -248,25 +250,25 @@ export default function App() {
                 </p>
               </div>
               <button className="text-secondary font-medium hover:text-primary transition-colors flex items-center gap-1 group">
-                {t('projects.viewArchive')} 
+                {t('projects.viewArchive')}
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               {/* Project 1 (Large) */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="md:col-span-8 group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-8 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 h-[600px]"
               >
-                <div 
+                <div
                   className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700"
                   style={{ backgroundImage: `url(${PROJECTS[0].image})` }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
-                
+
                 <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-500">
                   <div className="flex gap-2 mb-4">
                     {PROJECTS[0].tags.map(tag => (
@@ -284,7 +286,7 @@ export default function App() {
 
               <div className="md:col-span-4 flex flex-col gap-6">
                 {/* Project 2 */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -304,7 +306,7 @@ export default function App() {
                 </motion.div>
 
                 {/* Project 3 */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -335,7 +337,7 @@ export default function App() {
             <h2 className="text-4xl font-bold text-on-surface mb-12 text-center">{t('experience.title')}</h2>
             <div className="space-y-12">
               {['j1', 'j2', 'j3'].map((key, i) => (
-                <motion.div 
+                <motion.div
                   key={key}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -361,7 +363,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <motion.h2 
+                <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -372,7 +374,7 @@ export default function App() {
                 <p className="text-on-surface-variant text-lg mb-8 font-sans leading-relaxed">
                   {t('skills.description')}
                 </p>
-                
+
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     { icon: <CodeXml />, key: "typescript" },
@@ -380,7 +382,7 @@ export default function App() {
                     { icon: <Layers />, key: "architecture" },
                     { icon: <Settings2 />, key: "optimizations" },
                   ].map((item, i) => (
-                    <motion.div 
+                    <motion.div
                       key={item.key}
                       initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
@@ -403,7 +405,7 @@ export default function App() {
                       <span className="text-secondary font-mono text-sm">{skill.level}%</span>
                     </div>
                     <div className="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden">
-                      <motion.div 
+                      <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
@@ -443,7 +445,7 @@ export default function App() {
           <div className="text-on-surface-variant text-sm font-sans opacity-60">
             {t('footer.copyright')}
           </div>
-          
+
           <div className="flex gap-6">
             <a href="#" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Github size={20} />
