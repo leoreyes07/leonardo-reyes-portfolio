@@ -240,7 +240,7 @@ export default function App() {
                 <motion.h2
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   className="text-4xl md:text-5xl font-bold text-on-surface tracking-tight mb-4"
                 >
                   {t('projects.title')}
@@ -260,7 +260,7 @@ export default function App() {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.2 }}
                 className="md:col-span-8 group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-8 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 h-[600px]"
               >
                 <div
@@ -289,7 +289,7 @@ export default function App() {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   transition={{ delay: 0.1 }}
                   className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-secondary/30 transition-all duration-500 flex-1 min-h-[285px]"
                 >
@@ -309,7 +309,7 @@ export default function App() {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   transition={{ delay: 0.2 }}
                   className="group relative rounded-2xl overflow-hidden bg-tertiary-container/5 border border-tertiary-container/20 hover:bg-tertiary-container/10 transition-all duration-500 p-6 flex flex-col justify-between flex-1 min-h-[285px]"
                 >
@@ -341,7 +341,7 @@ export default function App() {
                   key={key}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   transition={{ delay: i * 0.1 }}
                   className="relative pl-8 border-l border-white/10 group"
                 >
@@ -366,7 +366,7 @@ export default function App() {
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   className="text-4xl font-bold text-on-surface mb-6"
                 >
                   {t('skills.title')}
@@ -386,7 +386,7 @@ export default function App() {
                       key={item.key}
                       initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
+                      viewport={{ once: false, amount: 0.2 }}
                       transition={{ delay: i * 0.1 }}
                       className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-high border border-white/5"
                     >
@@ -408,7 +408,7 @@ export default function App() {
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false, amount: 0.2 }}
                         transition={{ duration: 1, delay: i * 0.1 }}
                         className={`h-full rounded-full ${skill.color}`}
                       />
