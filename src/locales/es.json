@@ -21,17 +21,17 @@
   },
   "projectsData": {
     "p1": {
-      "title": "Plataforma de Análisis FinTech",
-      "description": "Un panel de alto rendimiento para el procesamiento de datos financieros en tiempo real, construido con WebSockets y librerías de visualización de datos complejas."
+      "title": "Development Agency Web",
+      "description": "Landing page moderna y responsiva para una agencia de desarrollo web, con interfaz pulida y animaciones fluidas."
     },
     "p2": {
-      "title": "API de E-Commerce",
-      "description": "Arquitectura de microservicios escalable para una plataforma minorista de alto tráfico."
+      "title": "Dogstagram",
+      "description": "Una plataforma social dedicada a compartir fotos e historias de nuestros amigos peludos."
     },
     "p3": {
-      "title": "Automatizador de Flujos de Trabajo",
-      "description": "Optimizando operaciones de equipo con pipelines CI/CD personalizados.",
-      "tag": "Herramienta Interna"
+      "title": "NicaGamer",
+      "description": "Una plataforma e-commerce inmersiva dedicada a periféricos, accesorios y los últimos lanzamientos de videojuegos.",
+      "tag": "E-Commerce"
     }
   },
   "experience": {
@@ -77,9 +77,10 @@
     "titleHighlight": "extraordinario",
     "titleEnd": "juntos.",
     "subtitle": "Actualmente aceptando nuevos proyectos y colaboraciones.",
-    "button": "Contactar"
+    "button": "Contactar",
+    "copied": "¡Copiado!"
   },
   "footer": {
-    "copyright": "© 2024 Digital Architect. Creado con Precisión."
+    "copyright": "© 2026 Digital Architect. Creado con Precisión."
   }
 }

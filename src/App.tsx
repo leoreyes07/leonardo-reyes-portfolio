@@ -31,21 +31,26 @@ const PROJECTS = [
   {
     id: 1,
     key: "p1",
-    tags: ["React", "Node.js"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkRFOnWVw5uGnc96BS5wCEAvQDoK-roYx1w46RA6oa60VpvWrF_zH9hBFi18HrtdyTXYYfWKFXTI4tbQrXO29rfUc8eQnXbh_yqvRwO-hFjjPaCMrQaW2G2EXG9DyHqJBNI6Rb2P6trmQBkdM6dWm8fsWEE_ObTDIBG3MKkVci52VkQ2GM1v_ALOB8YI2_ARwzo9li_9Zpu2FisHOe-JVDIgXdaDnyJbuNanLrVC1Dg2_2DY0j8K3VBlCLdq12dwlDFrTDelBPxUI",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/development_agency_web/&screenshot=true&meta=false&embed=screenshot.url",
+    link: "https://leoreyes07.github.io/development_agency_web/",
     size: "large",
   },
   {
     id: 2,
     key: "p2",
-    tags: ["Microservices", "Go"],
-    icon: <ShoppingCart className="w-8 h-8 text-secondary" />,
+    tags: ["React", "API"],
+    icon: <CodeXml className="w-8 h-8 text-secondary" />,
+    image: "https://api.microlink.io/?url=https://dogstagram-1.netlify.app/&screenshot=true&meta=false&embed=screenshot.url&force=true",
+    link: "https://dogstagram-1.netlify.app/",
     size: "small",
   },
   {
     id: 3,
     key: "p3",
-    tags: ["DevOps", "Python"],
+    tags: ["React", "E-Commerce"],
+    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/NicaGamer/&screenshot=true&meta=false&embed=screenshot.url",
+    link: "https://leoreyes07.github.io/NicaGamer/",
     size: "small",
   }
 ];
@@ -84,7 +89,7 @@ export default function App() {
           </motion.div>
           {['projects', 'skills', 'experience', 'contact'].map((key) => (
             <a key={key} href={`#${key}`}
-              className="group relative hidden md:inline-flex items-center justify-center px-5 py-2 rounded-full text-on-surface-variant font-medium text-sm transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
+              className="group relative hidden md:inline-flex items-center justify-center px-5 py-2 rounded-xl text-on-surface-variant font-medium text-sm transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
               <span className="relative z-10 group-hover:text-on-primary transition-colors duration-500">
@@ -98,18 +103,18 @@ export default function App() {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          <div className="lang-selector flex items-center gap-1 bg-surface-container-high p-1 rounded-full border border-white/5 ml-4">
+          <div className="lang-selector flex items-center gap-1 bg-surface-container-high p-1 rounded-xl border border-white/5 ml-4">
             <button
               onClick={() => i18n.changeLanguage('en')}
               aria-label="English"
-              className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${i18n.language === 'en' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${i18n.language === 'en' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
             >
               EN
             </button>
             <button
               onClick={() => i18n.changeLanguage('es')}
               aria-label="Español"
-              className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${i18n.language === 'es' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${i18n.language === 'es' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
             >
               ES
             </button>
@@ -189,7 +194,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high border border-outline-variant/20 mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(72,218,218,0.8)]" />
               <span className="text-sm font-medium text-on-surface-variant">{t('hero.available')}</span>
@@ -220,11 +225,11 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <button className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold hover:shadow-[0_0_20px_rgba(192,193,255,0.3)] transition-all flex items-center gap-2">
+              <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold hover:shadow-[0_0_20px_rgba(192,193,255,0.3)] transition-all flex items-center gap-2">
                 {t('hero.viewProjects')}
                 <ArrowDown size={18} />
               </button>
-              <button className="px-8 py-4 rounded-full border border-outline-variant/30 text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2">
+              <button className="px-8 py-4 rounded-xl border border-outline-variant/30 text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2">
                 <Download size={18} />
                 {t('hero.downloadCv')}
               </button>
@@ -257,11 +262,14 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               {/* Project 1 (Large) */}
-              <motion.div
+              <motion.a
+                href={PROJECTS[0].link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.2 }}
-                className="md:col-span-8 group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-8 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 h-[600px]"
+                className="md:col-span-8 group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-8 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 h-[600px] block cursor-pointer"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700"
@@ -282,50 +290,67 @@ export default function App() {
                     {t(`projectsData.${PROJECTS[0].key}.description`)}
                   </p>
                 </div>
-              </motion.div>
+              </motion.a>
 
               <div className="md:col-span-4 flex flex-col gap-6">
                 {/* Project 2 */}
-                <motion.div
+                <motion.a
+                  href={PROJECTS[1].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false, amount: 0.2 }}
                   transition={{ delay: 0.1 }}
-                  className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-secondary/30 transition-all duration-500 flex-1 min-h-[285px]"
+                  className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-secondary/30 transition-all duration-500 flex-1 min-h-[285px] block cursor-pointer"
                 >
-                  <div className="absolute inset-0 bg-surface-container-high group-hover:bg-surface-container-highest transition-colors duration-500" />
+                  <div
+                    className="absolute inset-0 bg-cover bg-top opacity-20 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700"
+                    style={{ backgroundImage: `url(${PROJECTS[1].image})` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/20" />
                   <div className="relative z-10">
-                    <div className="mb-4 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div className="mb-4 opacity-80 group-hover:opacity-100 transition-opacity flex justify-between items-start">
                       {PROJECTS[1].icon}
+                      <ExternalLink className="text-secondary/60" size={20} />
                     </div>
                     <h3 className="text-xl font-bold text-on-surface mb-1">{t(`projectsData.${PROJECTS[1].key}.title`)}</h3>
                     <p className="text-on-surface-variant text-sm line-clamp-2 font-sans">
                       {t(`projectsData.${PROJECTS[1].key}.description`)}
                     </p>
                   </div>
-                </motion.div>
+                </motion.a>
 
                 {/* Project 3 */}
-                <motion.div
+                <motion.a
+                  href={PROJECTS[2].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false, amount: 0.2 }}
                   transition={{ delay: 0.2 }}
-                  className="group relative rounded-2xl overflow-hidden bg-tertiary-container/5 border border-tertiary-container/20 hover:bg-tertiary-container/10 transition-all duration-500 p-6 flex flex-col justify-between flex-1 min-h-[285px]"
+                  className="group relative rounded-2xl overflow-hidden glass-panel border border-tertiary-container/20 hover:border-tertiary/40 transition-all duration-500 p-6 flex flex-col justify-end flex-1 min-h-[285px] block cursor-pointer"
                 >
-                  <div className="flex justify-between items-start">
-                    <span className="px-3 py-1 text-xs font-medium bg-tertiary-container/20 text-tertiary rounded-full border border-tertiary/20">
-                      {t(`projectsData.${PROJECTS[2].key}.tag`)}
-                    </span>
-                    <ExternalLink className="text-tertiary/60" size={20} />
-                  </div>
-                  <div>
+                  <div
+                    className="absolute inset-0 bg-cover bg-top opacity-20 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700"
+                    style={{ backgroundImage: `url(${PROJECTS[2].image})` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/20" />
+                  
+                  <div className="relative z-10">
+                    <div className="mb-4 flex justify-between items-start opacity-80 group-hover:opacity-100 transition-opacity">
+                      <span className="px-3 py-1 text-xs font-medium bg-tertiary-container/20 text-tertiary rounded-full border border-tertiary/20">
+                        {t(`projectsData.${PROJECTS[2].key}.tag`)}
+                      </span>
+                      <ExternalLink className="text-tertiary/60" size={20} />
+                    </div>
                     <h3 className="text-xl font-bold text-on-surface mb-1">{t(`projectsData.${PROJECTS[2].key}.title`)}</h3>
-                    <p className="text-on-surface-variant text-sm opacity-80 font-sans">
+                    <p className="text-on-surface-variant text-sm line-clamp-2 font-sans">
                       {t(`projectsData.${PROJECTS[2].key}.description`)}
                     </p>
                   </div>
-                </motion.div>
+                </motion.a>
               </div>
             </div>
           </div>
@@ -430,10 +455,10 @@ export default function App() {
               {t('contact.subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-6">
-              <button className="px-10 py-5 rounded-full bg-primary text-on-primary font-bold text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all flex items-center gap-3">
+              <a href="mailto:leoreyes_07@outlook.com" className="px-10 py-5 rounded-xl bg-primary text-on-primary font-bold text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all flex items-center gap-3">
                 <Mail size={24} />
                 {t('contact.button')}
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -447,10 +472,10 @@ export default function App() {
           </div>
 
           <div className="flex gap-6">
-            <a href="#" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
+            <a href="https://github.com/leoreyes07" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
+            <a href="https://www.linkedin.com/in/leonardo-reyes-8ab61a171" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Linkedin size={20} />
             </a>
             <a href="#" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">

@@ -21,17 +21,17 @@
   },
   "projectsData": {
     "p1": {
-      "title": "FinTech Analytics Platform",
-      "description": "A high-performance dashboard for real-time financial data processing, built with WebSockets and complex data visualization libraries."
+      "title": "Development Agency Web",
+      "description": "A modern, responsive landing page for a development agency with polished UI and smooth animations."
     },
     "p2": {
-      "title": "E-Commerce API",
-      "description": "Scalable microservices architecture for a high-traffic retail platform."
+      "title": "Dogstagram",
+      "description": "A social platform dedicated to sharing photos and stories of our furry friends."
     },
     "p3": {
-      "title": "Workflow Automator",
-      "description": "Streamlining team operations with custom CI/CD pipelines.",
-      "tag": "Internal Tool"
+      "title": "NicaGamer",
+      "description": "An immersive e-commerce platform dedicated to gaming gear, accessories, and the latest releases.",
+      "tag": "E-Commerce"
     }
   },
   "experience": {
@@ -77,9 +77,10 @@
     "titleHighlight": "remarkable",
     "titleEnd": "together.",
     "subtitle": "Currently accepting new projects and collaborations.",
-    "button": "Get in Touch"
+    "button": "Get in Touch",
+    "copied": "Copied!"
   },
   "footer": {
-    "copyright": "© 2024 Digital Architect. Crafted with Precision."
+    "copyright": "© 2026 Digital Architect. Crafted with Precision."
   }
 }
