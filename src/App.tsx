@@ -183,7 +183,7 @@ export default function App() {
               className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-surface-container-highest shadow-2xl mx-auto mb-8"
             >
               <img
-                src="/profile.png"
+                src={`${import.meta.env.BASE_URL}profile.png`}
                 alt="Leonardo Reyes Profile"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
