@@ -30,9 +30,29 @@
     },
     "p3": {
       "title": "NicaGamer",
-      "description": "An immersive e-commerce platform dedicated to gaming gear, accessories, and the latest releases.",
-      "tag": "E-Commerce"
+      "description": "Interactive and responsive gaming news and review website, built using semantic HTML5 and CSS3 with grid layouts and menu hover animations.",
+      "tag": "Gaming"
+    },
+    "p4": {
+      "title": "Bela & Luna Petshop",
+      "description": "E-commerce platform for Bela & Luna Petshop, developed with TypeScript, HTML, and CSS. Features an interactive catalog for pet accessories, integrated shopping cart, and a modern, responsive user experience."
+    },
+    "p5": {
+      "title": "MyFirstRepo",
+      "description": "A foundational web layout and landing page designed to showcase technical training modules including Web Development, Networking, Hardware, and Operating Systems, built with semantic HTML5 and CSS3."
+    },
+    "p6": {
+      "title": "Todo Task App",
+      "description": "Interactive task management web application with priority tagging, custom categories, and persistent state."
     }
+  },
+  "archive": {
+    "title": "Project Archive",
+    "subtitle": "A complete record of my works, experiments, and developments over time.",
+    "searchPlaceholder": "Search by name, technologies...",
+    "backToProjects": "Back to Projects",
+    "all": "All",
+    "noResults": "No projects match your search criteria."
   },
   "experience": {
     "title": "Experience",
