@@ -9,7 +9,7 @@ export default function Experience() {
       <div className="max-w-4xl mx-auto px-6 w-full">
         <h2 className="text-4xl font-bold text-on-surface mb-12 text-center">{t('experience.title')}</h2>
         <div className="space-y-12">
-          {['j1', 'j2', 'j3'].map((key, i) => (
+          {['j1', 'j2', 'j3', 'j4', 'j5'].map((key, i) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, x: -20 }}

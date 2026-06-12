@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import { CodeXml, BrainCircuit, Layers, Settings2 } from "lucide-react";
 
 const SKILLS = [
-  { key: "frontend", level: 95, color: "bg-secondary" },
-  { key: "backend", level: 88, color: "bg-primary" },
-  { key: "cloud", level: 75, color: "bg-tertiary-container text-white" },
+  { key: "it_support", level: 95, color: "bg-secondary" },
+  { key: "frontend", level: 80, color: "bg-primary" },
+  { key: "troubleshooting", level: 90, color: "bg-tertiary-container text-white" },
 ];
 
 export default function Skills() {
@@ -30,10 +30,10 @@ export default function Skills() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: <CodeXml />, key: "typescript" },
+                { icon: <CodeXml />, key: "frontend" },
+                { icon: <Layers />, key: "intune" },
+                { icon: <Settings2 />, key: "troubleshooting" },
                 { icon: <BrainCircuit />, key: "ai" },
-                { icon: <Layers />, key: "architecture" },
-                { icon: <Settings2 />, key: "optimizations" },
               ].map((item, i) => (
                 <motion.div
                   key={item.key}

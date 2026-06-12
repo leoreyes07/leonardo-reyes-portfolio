@@ -58,39 +58,51 @@
     "title": "Experience",
     "jobs": {
       "j1": {
-        "company": "TechFlow Systems",
-        "role": "Senior Full-Stack Developer",
-        "period": "2022 - Present",
-        "desc": "Leading the development of scalable cloud-native applications and mentoring junior engineers in modern best practices."
+        "company": "Concentrix Nicaragua",
+        "role": "Cloud Support Engineer (Microsoft Intune)",
+        "period": "Aug 2024 - Feb 2026",
+        "desc": "Resolved high-priority enterprise support tickets. Configured Microsoft Entra ID (Azure AD), Conditional Access, and compliance policies. Performed root cause analysis with ODC logs and managed MDM configurations."
       },
       "j2": {
-        "company": "Visionary Lab",
-        "role": "Software Engineer",
-        "period": "2020 - 2022",
-        "desc": "Developed immersive WebGL experiences and high-performance React dashboards for data-heavy industries."
+        "company": "Bela & Luna Pet Shop",
+        "role": "Founder & Owner",
+        "period": "Jan 2021 - Aug 2024",
+        "desc": "Launched a digital pet shop store. Managed product acquisition, marketing, content creation, and community engagement."
       },
       "j3": {
-        "company": "BlueOcean Startups",
-        "role": "Junior Developer",
-        "period": "2018 - 2020",
-        "desc": "Contributed to building early-stage e-commerce platforms and automated testing pipelines."
+        "company": "Nortek S.A.",
+        "role": "Computer Maintenance Assistant",
+        "period": "Oct 2017 - Nov 2019",
+        "desc": "Performed hardware diagnostics, basic troubleshooting, and maintenance. Installed operating systems, drivers, and software. Supported basic network connectivity issues."
+      },
+      "j4": {
+        "company": "Reinter S.A.",
+        "role": "Operations Assistant",
+        "period": "Jan 2015 - Jul 2017",
+        "desc": "Managed database records and entered maintenance information into the APL system. Tracked preventive maintenance schedules and inspected cargo containers."
+      },
+      "j5": {
+        "company": "Sitel",
+        "role": "Technical Support Agent (Cricket Wireless)",
+        "period": "Jul 2012 - May 2014",
+        "desc": "Provided technical support for phone services including mobile web, call failures, and messaging. Assisted with billing inquiries and processed ESN/MDN changes."
       }
     }
   },
   "skills": {
     "title": "Technical Mastery",
-    "description": "I specialize in building complex digital systems using a diverse stack of modern technologies. My focus is on writing clean, maintainable, and highly performant code.",
+    "description": "I am an IT Support Engineer with expertise in Microsoft Intune, MDM, and enterprise troubleshooting. Currently expanding my capabilities in Frontend Development, bridging infrastructure management with web technologies.",
     "items": {
-      "typescript": "TypeScript",
-      "ai": "AI Integration",
-      "architecture": "Architecture",
-      "optimizations": "Optimizations"
+      "frontend": "Frontend Development",
+      "intune": "Intune & MDM",
+      "troubleshooting": "Troubleshooting",
+      "ai": "AI-Powered Agents"
     }
   },
   "skillsData": {
-    "frontend": "Frontend Development",
-    "backend": "Backend & APIs",
-    "cloud": "Cloud Infrastructure"
+    "it_support": "IT Support & Administration",
+    "frontend": "Frontend (React, JS, HTML/CSS)",
+    "troubleshooting": "Technical Troubleshooting"
   },
   "contact": {
     "title": "Let's build something",

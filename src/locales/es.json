@@ -58,39 +58,51 @@
     "title": "Experiencia",
     "jobs": {
       "j1": {
-        "company": "TechFlow Systems",
-        "role": "Desarrollador Full-Stack Senior",
-        "period": "2022 - Presente",
-        "desc": "Liderando el desarrollo de aplicaciones escalables en la nube y mentoreando a ingenieros junior en mejores prácticas modernas."
+        "company": "Concentrix Nicaragua",
+        "role": "Cloud Support Engineer (Microsoft Intune)",
+        "period": "Ago 2024 - Feb 2026",
+        "desc": "Resolví tickets de soporte empresarial de alta prioridad. Configuré Microsoft Entra ID (Azure AD), Acceso Condicional y políticas de cumplimiento. Realicé análisis de causa raíz con logs ODC y administré configuraciones MDM."
       },
       "j2": {
-        "company": "Visionary Lab",
-        "role": "Ingeniero de Software",
-        "period": "2020 - 2022",
-        "desc": "Desarrollé experiencias inmersivas en WebGL y paneles de control en React de alto rendimiento para industrias de uso intensivo de datos."
+        "company": "Bela & Luna Pet Shop",
+        "role": "Fundador y Propietario",
+        "period": "Ene 2021 - Ago 2024",
+        "desc": "Lancé una tienda digital de mascotas. Gestioné la adquisición de productos, marketing, creación de contenido y participación de la comunidad."
       },
       "j3": {
-        "company": "BlueOcean Startups",
-        "role": "Desarrollador Junior",
-        "period": "2018 - 2020",
-        "desc": "Contribuí a la construcción de plataformas de comercio electrónico en etapa inicial y pipelines de pruebas automatizadas."
+        "company": "Nortek S.A.",
+        "role": "Asistente de Mantenimiento Informático",
+        "period": "Oct 2017 - Nov 2019",
+        "desc": "Realicé diagnósticos de hardware, resolución de problemas básicos y mantenimiento. Instalé sistemas operativos, controladores y software. Brindé soporte en problemas básicos de conectividad de red."
+      },
+      "j4": {
+        "company": "Reinter S.A.",
+        "role": "Asistente de Operaciones",
+        "period": "Ene 2015 - Jul 2017",
+        "desc": "Gestioné registros de bases de datos e información de mantenimiento en el sistema APL. Hice seguimiento de cronogramas de mantenimiento preventivo e inspeccioné contenedores de carga."
+      },
+      "j5": {
+        "company": "Sitel",
+        "role": "Agente de Soporte Técnico (Cricket Wireless)",
+        "period": "Jul 2012 - May 2014",
+        "desc": "Brindé soporte técnico para servicios telefónicos incluyendo red móvil, fallas de llamadas y mensajería. Asistí en consultas de facturación y procesé cambios de ESN/MDN."
       }
     }
   },
   "skills": {
     "title": "Dominio Técnico",
-    "description": "Me especializo en construir sistemas digitales complejos usando un stack diverso de tecnologías modernas. Mi enfoque es escribir código limpio, mantenible y de alto rendimiento.",
+    "description": "Soy Ingeniero de Soporte IT con experiencia en Microsoft Intune, MDM y resolución de problemas empresariales. Actualmente expandiendo mis capacidades en Desarrollo Frontend, uniendo la gestión de infraestructura con tecnologías web.",
     "items": {
-      "typescript": "TypeScript",
-      "ai": "Integración de IA",
-      "architecture": "Arquitectura",
-      "optimizations": "Optimizaciones"
+      "frontend": "Desarrollo Frontend",
+      "intune": "Intune y MDM",
+      "troubleshooting": "Troubleshooting",
+      "ai": "Agentes de IA"
     }
   },
   "skillsData": {
-    "frontend": "Desarrollo Frontend",
-    "backend": "Backend y APIs",
-    "cloud": "Infraestructura Cloud"
+    "it_support": "Soporte IT y Administración",
+    "frontend": "Frontend (React, JS, HTML/CSS)",
+    "troubleshooting": "Resolución de Problemas"
   },
   "contact": {
     "title": "Construyamos algo",
