@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Leonardo Reyes | Frontend Developer Portfolio
 
-# Run and deploy your AI Studio app
+A modern and responsive portfolio website showcasing my experience, technical skills, and projects as a Full Stack Developer.
 
-This contains everything you need to run your app locally.
+## 🚀 Overview
 
-View your app in AI Studio: https://ai.studio/apps/c85eff59-d42c-4cea-b579-e15596b4933c
+This portfolio was built to present my professional background, technical expertise, and featured projects in a clean, modern, and user-friendly interface.
 
-## Run Locally
+### Features
 
-**Prerequisites:**  Node.js
+- Responsive design for desktop and mobile devices
+- Modern UI with smooth animations
+- Multi-language support (i18n)
+- Project showcase section
+- Professional experience timeline
+- Skills and technologies overview
+- Contact information
+- Fast performance powered by Vite
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React 19
+- TypeScript
+- React Router
+- Tailwind CSS
+- Lucide React Icons
+- Motion
+
+### Internationalization
+
+- i18next
+- react-i18next
+
+### Development Tools
+
+- Vite
+- ESLint / TypeScript
+- Node.js
+
+### Additional Integrations
+
+- Google GenAI SDK
+
+---
+
+## 📂 Project Structure
+
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── hooks/
+│   ├── services/
+│   └── utils/
+├── .github/
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
