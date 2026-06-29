@@ -1,4 +1,4 @@
-# Leonardo Reyes | Full Stack Developer Portfolio
+# Leonardo Reyes | Frontend Developer Portfolio
 
 A modern and responsive portfolio website showcasing my experience, technical skills, and projects as a Full Stack Developer.
 
