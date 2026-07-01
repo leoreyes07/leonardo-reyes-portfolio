@@ -22,16 +22,18 @@
   "projectsData": {
     "p1": {
       "title": "Development Agency Web",
-      "description": "A modern, responsive landing page for a development agency with polished UI and smooth animations."
+      "description": "A modern, responsive landing page for a development agency with polished UI and smooth animations.",
+      "tag": "Landing Page"
     },
     "p2": {
       "title": "Dogstagram",
-      "description": "A social platform dedicated to sharing photos and stories of our furry friends."
+      "description": "A social platform dedicated to sharing photos and stories of our furry friends.",
+      "tag": "Social Media"
     },
     "p3": {
-      "title": "NicaGamer",
-      "description": "Interactive and responsive gaming news and review website, built using semantic HTML5 and CSS3 with grid layouts and menu hover animations.",
-      "tag": "Gaming"
+      "title": "Basa Logistics",
+      "description": "Modern logistics and transportation platform, designed with an intuitive, clean, and fully responsive interface.",
+      "tag": "Logistics"
     },
     "p4": {
       "title": "Bela & Luna Petshop",

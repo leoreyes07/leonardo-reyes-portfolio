@@ -67,6 +67,11 @@ export default function Projects() {
 
             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-500">
               <div className="flex gap-2 mb-4">
+                {featuredProjects[0].hasTagBadge && (
+                  <span className="px-3 py-1 text-xs font-medium bg-secondary-container/20 text-secondary border border-secondary/20 rounded-full">
+                    {t(`projectsData.${featuredProjects[0].key}.tag`)}
+                  </span>
+                )}
                 {featuredProjects[0].tags.map(tag => (
                   <span key={tag} className="px-3 py-1 text-xs font-medium bg-secondary-container/20 text-secondary border border-secondary/20 rounded-full">
                     {tag}
@@ -90,17 +95,30 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ delay: 0.1 }}
-              className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-secondary/30 transition-all duration-500 flex-1 min-h-[285px] block cursor-pointer"
+              className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 flex-1 min-h-[285px] block cursor-pointer"
             >
               <div
-                className="absolute inset-0 bg-cover bg-top opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                className="absolute inset-0 bg-cover bg-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
                 style={{ backgroundImage: `url(${featuredProjects[1].image})` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
               <div className="relative z-10">
-                <div className="mb-4 opacity-80 group-hover:opacity-100 transition-opacity flex justify-between items-start">
-                  {renderIcon(featuredProjects[1].iconKey)}
-                  <ExternalLink className="text-secondary/60" size={20} />
+                <div className="mb-4 flex justify-between items-start opacity-80 group-hover:opacity-100 transition-opacity">
+                  <div className="flex gap-2 flex-wrap items-center">
+                    {featuredProjects[1].hasTagBadge ? (
+                      <span className="px-3 py-1 text-xs font-medium bg-fuchsia-500/20 text-fuchsia-300 rounded-full border border-fuchsia-500/30">
+                        {t(`projectsData.${featuredProjects[1].key}.tag`)}
+                      </span>
+                    ) : (
+                      renderIcon(featuredProjects[1].iconKey)
+                    )}
+                    {featuredProjects[1].tags.map(tag => (
+                      <span key={tag} className="px-2 py-1 text-[10px] font-medium bg-fuchsia-500/20 text-fuchsia-300 rounded-full border border-fuchsia-500/30">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <ExternalLink className="text-fuchsia-400 shrink-0 ml-2" size={20} />
                 </div>
                 <h3 className="text-xl font-bold text-on-surface mb-1">{t(`projectsData.${featuredProjects[1].key}.title`)}</h3>
                 <p className="text-on-surface-variant text-sm line-clamp-2 font-sans">
@@ -121,17 +139,24 @@ export default function Projects() {
               className="group relative rounded-2xl overflow-hidden glass-panel border border-tertiary-container/20 hover:border-tertiary/40 transition-all duration-500 p-6 flex flex-col justify-end flex-1 min-h-[285px] block cursor-pointer"
             >
               <div
-                className="absolute inset-0 bg-cover bg-top opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                className="absolute inset-0 bg-cover bg-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
                 style={{ backgroundImage: `url(${featuredProjects[2].image})` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
               
               <div className="relative z-10">
                 <div className="mb-4 flex justify-between items-start opacity-80 group-hover:opacity-100 transition-opacity">
-                  <span className="px-3 py-1 text-xs font-medium bg-tertiary-container/20 text-tertiary rounded-full border border-tertiary/20">
-                    {t(`projectsData.${featuredProjects[2].key}.tag`)}
-                  </span>
-                  <ExternalLink className="text-tertiary/60" size={20} />
+                  <div className="flex gap-2 flex-wrap items-center">
+                    <span className="px-3 py-1 text-xs font-medium bg-tertiary-container/20 text-tertiary rounded-full border border-tertiary/20">
+                      {t(`projectsData.${featuredProjects[2].key}.tag`)}
+                    </span>
+                    {featuredProjects[2].tags.map(tag => (
+                      <span key={tag} className="px-2 py-1 text-[10px] font-medium bg-tertiary-container/20 text-tertiary rounded-full border border-tertiary/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <ExternalLink className="text-tertiary/60 shrink-0 ml-2" size={20} />
                 </div>
                 <h3 className="text-xl font-bold text-on-surface mb-1">{t(`projectsData.${featuredProjects[2].key}.title`)}</h3>
                 <p className="text-on-surface-variant text-sm line-clamp-2 font-sans">

@@ -104,7 +104,7 @@ export default function ProjectsArchive() {
           </div>
 
           {/* Tag Filter Pills */}
-          <div className="flex flex-wrap gap-2 w-full md:w-auto md:justify-end">
+          <div className="flex flex-wrap gap-2 w-full md:flex-1 md:justify-start">
             <button
               onClick={() => setSelectedTag(null)}
               className={`px-4 py-2 rounded-xl text-xs font-semibold font-sans transition-all duration-300 border cursor-pointer ${
