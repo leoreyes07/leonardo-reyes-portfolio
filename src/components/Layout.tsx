@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Linkedin, Twitter } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 import CustomCursor from "./CustomCursor";
 
 export default function Layout() {
@@ -155,9 +155,7 @@ export default function Layout() {
             <a href="https://www.linkedin.com/in/leonardo-reyes-8ab61a171" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
-              <Twitter size={20} />
-            </a>
+
           </div>
         </div>
       </footer>

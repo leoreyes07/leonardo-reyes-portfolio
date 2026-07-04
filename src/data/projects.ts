@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     tags: ["Svelte", "Vite", "API"],
     hasTagBadge: true,
     iconKey: "code-xml",
-    image: "https://api.microlink.io/?url=https://dogstagram-1.netlify.app/&screenshot=true&meta=false&embed=screenshot.url",
+    image: "https://api.microlink.io/?url=https://dogstagram-1.netlify.app/&screenshot=true&meta=false&embed=screenshot.url&force=true",
     link: "https://dogstagram-1.netlify.app/",
     size: "small",
     featured: true,
