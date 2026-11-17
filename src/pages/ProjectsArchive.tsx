@@ -152,9 +152,12 @@ export default function ProjectsArchive() {
                 className="group relative rounded-2xl overflow-hidden glass-panel border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 p-6 flex flex-col justify-between h-[360px] block cursor-pointer"
               >
                 {/* Visual Glass Cover Image Background */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                  style={{ backgroundImage: `url(${project.image})` }}
+                <img
+                  src={project.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover object-center opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
                 />
                 
                 {/* Ambient Radial Hover Glow on Card */}

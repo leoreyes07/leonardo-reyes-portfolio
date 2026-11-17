@@ -59,9 +59,12 @@ export default function Projects() {
             viewport={{ once: false, amount: 0.2 }}
             className="md:col-span-8 group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-8 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 h-[600px] block cursor-pointer"
           >
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
-              style={{ backgroundImage: `url(${featuredProjects[0].image})` }}
+            <img
+              src={featuredProjects[0].image}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
 
@@ -97,9 +100,12 @@ export default function Projects() {
               transition={{ delay: 0.1 }}
               className="group relative rounded-2xl overflow-hidden glass-panel flex flex-col justify-end p-6 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 flex-1 min-h-[285px] block cursor-pointer"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
-                style={{ backgroundImage: `url(${featuredProjects[1].image})` }}
+              <img
+                src={featuredProjects[1].image}
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
               <div className="relative z-10">
@@ -138,9 +144,12 @@ export default function Projects() {
               transition={{ delay: 0.2 }}
               className="group relative rounded-2xl overflow-hidden glass-panel border border-tertiary-container/20 hover:border-tertiary/40 transition-all duration-500 p-6 flex flex-col justify-end flex-1 min-h-[285px] block cursor-pointer"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
-                style={{ backgroundImage: `url(${featuredProjects[2].image})` }}
+              <img
+                src={featuredProjects[2].image}
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-65 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
               

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     key: "p1",
     tags: ["HTML5", "CSS3", "JavaScript", "UI/UX"],
     hasTagBadge: true,
-    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/development_agency_web/&screenshot=true&meta=false&embed=screenshot.url",
+    image: `${import.meta.env.BASE_URL}projects/p1.webp`,
     link: "https://leoreyes07.github.io/development_agency_web/",
     size: "large",
     featured: true,
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     tags: ["Svelte", "Vite", "API"],
     hasTagBadge: true,
     iconKey: "code-xml",
-    image: "https://api.microlink.io/?url=https://dogstagram-1.netlify.app/&screenshot=true&meta=false&embed=screenshot.url&force=true",
+    image: `${import.meta.env.BASE_URL}projects/p2.webp`,
     link: "https://dogstagram-1.netlify.app/",
     size: "small",
     featured: true,
@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     key: "p3",
     tags: ["React", "TypeScript", "TailwindCSS"],
     hasTagBadge: true,
-    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/basa-logistics/&screenshot=true&meta=false&embed=screenshot.url",
+    image: `${import.meta.env.BASE_URL}projects/p3.webp`,
     link: "https://leoreyes07.github.io/basa-logistics/",
     size: "small",
     featured: true,
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     id: 1210908481, // bela-and-luna-petshop
     key: "p4",
     tags: ["React", "JavaScript", "E-commerce"],
-    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/bela-and-luna-petshop/&screenshot=true&meta=false&embed=screenshot.url",
+    image: `${import.meta.env.BASE_URL}projects/p4.webp`,
     link: "https://leoreyes07.github.io/bela-and-luna-petshop/",
     size: "small",
     featured: false,
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     id: 829516898, // myFirstRepo
     key: "p5",
     tags: ["HTML5", "CSS3", "Portfolio"],
-    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/myFirstRepo/&screenshot=true&meta=false&embed=screenshot.url",
+    image: `${import.meta.env.BASE_URL}projects/p5.webp`,
     link: "https://leoreyes07.github.io/myFirstRepo/",
     size: "small",
     featured: false,
@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     id: 1026364543, // Todo-Task-App
     key: "p6",
     tags: ["React", "TailwindCSS", "LocalStorage"],
-    image: "https://api.microlink.io/?url=https://leoreyes07.github.io/Todo-Task-App/&screenshot=true&meta=false&embed=screenshot.url",
+    image: `${import.meta.env.BASE_URL}projects/p6.webp`,
     link: "https://leoreyes07.github.io/Todo-Task-App/",
     size: "small",
     featured: false,
