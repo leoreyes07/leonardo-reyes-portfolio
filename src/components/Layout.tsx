@@ -27,7 +27,7 @@ export default function Layout() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <Link to="/" className="outline-none">
+          <Link to="/" className="rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -68,6 +68,9 @@ export default function Layout() {
             <button
               className="md:hidden text-on-surface p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -75,7 +78,8 @@ export default function Layout() {
             <div className="lang-selector flex items-center gap-1 bg-surface-container-high p-1 rounded-xl border border-white/5 ml-4">
               <button
                 onClick={() => i18n.changeLanguage('en')}
-                aria-label="English"
+                aria-label="EN - English"
+                aria-pressed={i18n.language === 'en'}
                 className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
                   i18n.language === 'en' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'
                 }`}
@@ -84,7 +88,8 @@ export default function Layout() {
               </button>
               <button
                 onClick={() => i18n.changeLanguage('es')}
-                aria-label="Español"
+                aria-label="ES - Español"
+                aria-pressed={i18n.language === 'es'}
                 className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
                   i18n.language === 'es' ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'
                 }`}
@@ -99,6 +104,7 @@ export default function Layout() {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
+              id="mobile-menu"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
@@ -149,10 +155,10 @@ export default function Layout() {
           </div>
 
           <div className="flex gap-6">
-            <a href="https://github.com/leoreyes07" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
+            <a href="https://github.com/leoreyes07" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/leonardo-reyes-8ab61a171" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
+            <a href="https://www.linkedin.com/in/leonardo-reyes-8ab61a171" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-on-surface-variant hover:text-secondary p-2 transition-colors">
               <Linkedin size={20} />
             </a>
 
