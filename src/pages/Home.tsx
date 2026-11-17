@@ -38,7 +38,11 @@ export default function Home() {
           className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-surface-container-highest shadow-2xl mx-auto mb-8"
         >
           <img
-            src={`${import.meta.env.BASE_URL}profile.png`}
+            src={`${import.meta.env.BASE_URL}profile.webp`}
+            width={480}
+            height={480}
+            fetchPriority="high"
+            decoding="async"
             alt="Leonardo Reyes Profile"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
